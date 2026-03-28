@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Notes - Lecture 6</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#020617);
+    color:#e2e8f0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    background:#0f172a;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+h1{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+.chapter{
+    text-align:center;
+    background:#1e293b;
+    padding:8px;
+    border-radius:8px;
+    margin-bottom:25px;
+    color:#94a3b8;
+}
+
+h2{
+    margin:25px 0 15px;
+    text-align:center;
+    color:#22c55e;
+}
+
+.card{
+    background:#020617;
+    border:1px solid #1e293b;
+    padding:18px;
+    border-radius:12px;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#cbd5f5;
+    line-height:1.6;
+}
+
+pre{
+    background:#020617;
+    padding:10px;
+    border-radius:8px;
+    color:#e2e8f0;
+    overflow-x:auto;
+}
+
+.explore-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:#38bdf8;
+    color:#020617;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.explore-btn:hover{
+    background:#22c55e;
+    color:#020617;
+}
+
+footer{
+    text-align:center;
+    margin-top:20px;
+    font-size:13px;
+    color:#64748b;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Lecture 6</h1>
+<div class="chapter">Chapter 6 Started</div>
+
+<h2>The 3 Musketeers of Web Dev</h2>
+
+<div class="card">
+<h3>HTML (Structure)</h3>
+<p>HTML is used to create the <b>structure</b> of a webpage.</p>
+</div>
+
+<div class="card">
+<h3>CSS (Style)</h3>
+<p>CSS is used to <b>style</b> the webpage.</p>
+</div>
+
+<div class="card">
+<h3>JavaScript (Logic)</h3>
+<p>JavaScript adds <b>logic and interactivity</b>.</p>
+</div>
+
+<div class="card">
+<h3>Starter Code</h3>
+<p>&lt;script&gt; tag connects HTML with <b>JavaScript</b>.<br>&lt;style&gt; tag connects HTML with <b>CSS</b>.</p>
+</div>
+
+<div class="card">
+<h3>Basic HTML Structure</h3>
+<pre>
+&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;title&gt; Website Name &lt;/title&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<a href="DOMTopic.html" class="explore-btn">Explore</a>
+</div>
+
+<h2>Window Object</h2>
+
+<div class="card">
+<p>The <b>window object</b> represents an open browser window.</p>
+</div>
+
+<div class="card">
+<p>It acts as a <b>global object</b> and provides many properties and methods.</p>
+<a href="WindowObj.html" class="explore-btn">Explore</a>
+</div>
+
+<h2>What is DOM?</h2>
+
+<div class="card">
+<p>When a web page is loaded, the browser creates a DOM.</p>
+</div>
+
+<div class="card">
+<p>DOM represents the page as a tree structure.</p>
+</div>
+
+<div class="card">
+<h3>DOM Structure Diagram</h3>
+<img src="TreeModel.png" height="300px">
+<a href="DOMWin.html" class="explore-btn">What Is DOM</a>
+</div>
+
+<h2>DOM Manipulation</h2>
+
+<div class="card">
+<p>DOM Manipulation allows JS to modify HTML dynamically.</p>
+</div>
+
+<div class="card">
+<h3>Selecting with id</h3>
+<pre>document.getElementById("myId")</pre>
+</div>
+
+<div class="card">
+<h3>Selecting with class</h3>
+<pre>document.getElementsByClassName("myClass")</pre>
+</div>
+
+<div class="card">
+<h3>Selecting with tag</h3>
+<pre>document.getElementsByTagName("p")</pre>
+</div>
+
+<a href="DOMManipulation.html" class="explore-btn">Explore</a>
+
+<h2>Query Selector</h2>
+
+<div class="card">
+<p>document.querySelector("#myId / .myClass / tag")</p>
+</div>
+
+<div class="card">
+<p>document.querySelectorAll()</p>
+</div>
+
+<a href="DOMQuerySl.html" class="explore-btn">Explore</a>
+
+<h2>DOM Properties</h2>
+
+<div class="card"><p>tagName</p></div>
+<div class="card"><p>innerText</p></div>
+<div class="card"><p>innerHTML</p></div>
+<div class="card"><p>textContent</p></div>
+
+<a href="DOMProperties.html" class="explore-btn">Explore</a>
+
+<h2>Practice</h2>
+
+<div class="card">
+<p>Create H2 and append text using JS</p>
+<a href="LetsPractice1.html" class="explore-btn">Solution</a>
+</div>
+
+<div class="card">
+<p>Create 3 divs and add text</p>
+<a href="LetsPractice2.html" class="explore-btn">Solution</a>
+</div>
+
+<h2>Attributes</h2>
+
+<div class="card">
+<p>getAttribute()</p>
+<p>setAttribute()</p>
+<p>node.style</p>
+</div>
+
+<a href="DOMAttribute.html" class="explore-btn">Explore</a>
+
+<h2>Insert Elements</h2>
+
+<div class="card">
+<p>createElement()</p>
+<p>append()</p>
+<p>prepend()</p>
+<p>before()</p>
+<p>after()</p>
+<p>remove()</p>
+</div>
+
+<a href="InsertElements.html" class="explore-btn">Explore</a>
+
+<h2>Practice</h2>
+
+<div class="card">
+<p>Create button using JS</p>
+<a href="LetsPractice3.html" class="explore-btn">Solution</a>
+</div>
+
+<div class="card">
+<p>Use classList to add class</p>
+<a href="LetsPractice4.html" class="explore-btn">Solution</a>
+</div>
+
+<footer>
+Made by Vikas Pawar 💻
+</footer>
+
+</div>
+
+</body>
+</html>
